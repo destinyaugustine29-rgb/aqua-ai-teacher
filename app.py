@@ -4,7 +4,7 @@ from google import genai
 st.title("Aqua AI Math Teacher 🌊")
 st.write("Your personal math teacher that speaks any language!")
 
-api_key = "AIzaSyA7fhjafB1XqgTJiAOsvV5B0AzINAaMN18"
+api_key = "GEMINI_API_KEY"
 client = genai.Client(api_key=api_key)
 
 name = st.text_input("What's your name?")
