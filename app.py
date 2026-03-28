@@ -14,7 +14,7 @@ question = st.text_input("Ask Aqua any maths question:")
 if st.button("Ask Aqua 🌊"):
     if question:
         response = client.models.generate_content(
-            model="gemini-3-flash-preview",
+            model="gemini-2.0-flash-preview",
             contents="You are Aqua, friendly maths teacher. Answer in " + language + ": " + question
         )
         st.write("**Aqua:** " + response.text)
