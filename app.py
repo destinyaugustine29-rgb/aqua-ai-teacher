@@ -4,7 +4,8 @@ from google import genai
 st.title("Aqua AI Math Teacher 🌊")
 st.write("Your personal math teacher that speaks any language!")
 
-client = genai.Client(api_key=st.secrets["GOOGLE_API_KEY"])
+# This looks for the name you saved in the Streamlit Secrets box
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 name = st.text_input("What's your name?")
 language = st.selectbox("What language?", ["English", "French", "Spanish", "Pidgin", "Chinese", "Yoruba"])
