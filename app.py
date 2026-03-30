@@ -17,7 +17,7 @@ if st.button("Ask Aqua 🌊"):
     if question:
         try:
             response = client.models.generate_content(
-                model="gemini-1.5-flash",
+                model="models/gemini-1.5-flash",
                 contents=f"You are Aqua, a friendly maths teacher. Answer in {language}: {question}"
             )
             st.write(f"**Aqua:** {response.text}")
